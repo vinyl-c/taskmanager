@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="./script.js" defer></script>
+    <style src="./style.css"></style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <p>Welcome to the task manager! Enter the name of a task below and select its priority level and 
+        whether it's important. <br>
+        Once a task has been added, you can mark it as complete or delete it.
+    </p>
+
+    <form>
+        <input type="text" id="taskenter"> 
+        <select name="priority" id="prioritylvl">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select> 
+
+        <label for="important"> Important?:</label> <input type="checkbox" id="important">
+
+        <button onclick="createTask()">Submit Task</button>
+    </form>
+
+    <div id="taskmanager">
+
+    </div>
+</body>
+</html>
